@@ -42,7 +42,7 @@ jobs:
         run: pytest --cov=. --cov-report=xml
 
       - name: Upload coverage
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: python-coverage-${{ matrix.python-version }}
           path: backend/coverage.xml
@@ -82,7 +82,7 @@ jobs:
         run: npm run build
 
       - name: Upload build artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: frontend-build-${{ matrix.node-version }}
           path: frontend/build

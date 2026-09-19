@@ -10,7 +10,7 @@ requires-python = ">=3.11"
 dependencies = [
     "Flask==3.1.2",
     "python-dotenv==1.2.1",
-    "pypdf==6.4.0",
+    "pypdf==6.18.1",
 ]
 
 [project.optional-dependencies]
